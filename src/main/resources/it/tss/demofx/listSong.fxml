@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.tss.demofx.gui.ListSongController">
+   <children>
+      <TableView fx:id="tblSongs" prefHeight="367.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="col1" prefWidth="130.0" text="ID" />
+            <TableColumn fx:id="col2" prefWidth="75.0" text="TITOLO" />
+            <TableColumn fx:id="col3" prefWidth="75.0" text="ARTISTA" />
+            <TableColumn fx:id="col4" prefWidth="75.0" text="ALBUM" />
+            <TableColumn fx:id="col5" prefWidth="193.0" text="FILENAME" />
+         </columns></TableView>
+      <HBox alignment="CENTER" prefHeight="33.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="cmdPlay" mnemonicParsing="false" onAction="#onPlay" text="play" />
+            <Button fx:id="cmdAggiorna" mnemonicParsing="false" onAction="#onUpdate" text="Aggiorna" />
+            <Button fx:id="cmdElimina" mnemonicParsing="false" onAction="#onDelete" text="elimina" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
